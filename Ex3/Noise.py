@@ -22,7 +22,7 @@ def showandwrite(filename, img):
 	cv2.imwrite(''.join([filename,".png"]),img)
 
 
-src = cv2.imread("Test_images/Lenna.png", 1)
+src = cv2.imread("../Test_images/Lenna.png", 1)
 showandwrite( "Original image", src)
 
 noise_img = src.copy(); 

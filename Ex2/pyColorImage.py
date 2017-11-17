@@ -12,7 +12,7 @@ def showandwrite(filename, img):
 
 
 
-src = cv2.imread("Test_images/Lenna.png", 1)
+src = cv2.imread("../Test_images/Lenna.png", 1)
 print("For RGB ",str(src[x,y]))
 #cv2.namedWindow( 'Original image', cv2.WINDOW_AUTOSIZE );
 #cv2.imshow( "Original image", src);
