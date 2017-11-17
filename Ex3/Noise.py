@@ -28,16 +28,17 @@ showandwrite( "Original image", src)
 noise_img = src.copy(); 
 mean = 0;			
 sigma = 50;		
+win = (7,7);
 add_gaussian_Noise(noise_img, mean, sigma);
 showandwrite( "Gaussian Noise", noise_img);
 
 
 noise_dst = noise_img.copy();
-cv2.boxFilter(noise_dst,-1, (3, 3))
+cv2.boxFilter(noise_dst,-1, win)
 showandwrite( "GN Box filter", noise_dst);
 
 noise_dst1 = noise_img.copy();
-cv2.GaussianBlur(noise_dst1, (3, 3), 1.5)
+cv2.GaussianBlur(noise_dst1, win, 1.5)
 showandwrite( "GN Gaussian filter", noise_dst1);
 
 noise_dst2 = noise_img.copy();
@@ -51,11 +52,11 @@ add_sault_peper_Noise(noise_img2,pa,pb)
 showandwrite("Salt and Pepper Noise", noise_img2)
 
 noise_dst3 = noise_img2.copy();
-cv2.boxFilter(noise_img2,-1, (3, 3))
+cv2.boxFilter(noise_img2,-1, win)
 showandwrite( "SP Box filter", noise_dst3);
 
 noise_dst4 = noise_img.copy();
-cv2.GaussianBlur(noise_dst4, (3, 3), 1.5)
+cv2.GaussianBlur(noise_dst4, win, 1.5)
 showandwrite( "SP Gaussian filter", noise_dst4);
 
 noise_dst5 = noise_img.copy();
