@@ -15,13 +15,13 @@ A program reads the cvMat object from rows to column to type. We can specify the
 
 I also found the splits, while not assigned to the photo, is still assigning values.
 
-##Exercise 3
+## Exercise 3
 
 As we increase the Interpolation filter window, the image becomes more blurry. 
 
 Intuitively, Gaussian filter works better for Gaussian noise. The Median filter works better for salt and pepper noise. since saltNpepper noise are extreme values that are not going to be median value. it will always be ruled out by the filter. 
 
-##Exercise 4
+## Exercise 4
 
 1. Different Threshold values result in different effects. The "Bitterness" is based on different input and the expected result.
 
