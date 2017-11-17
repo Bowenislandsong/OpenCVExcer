@@ -14,3 +14,4 @@ Exercise 2
 ('For HSV ', '[  4 135 225]')
 
 I also found the splits, while not assigned to the photo, is still assigning values.
+
