@@ -15,3 +15,15 @@ Exercise 2
 
 I also found the splits, while not assigned to the photo, is still assigning values.
 
+3. 
+As we increase the Interpolation filter window, the image becomes more blurry. 
+
+Intuitively, Gaussian filter works better for Gaussian noise. The Median filter works better for salt and pepper noise. since saltNpepper noise are extreme values that are not going to be median value. it will always be ruled out by the filter. 
+
+4.
+
+Different Threshold values result in different effects. The "Bitterness" is based on different input and the expected result.
+
+Binary thresholding is only showing 2 colors and will not show details of the picture. The filter is solely based on intensity of the pixel value.
+
+The adaptive filter shows more tolerance in deciding threshold values. The designed of such threshold value has more tolerance on the input.
